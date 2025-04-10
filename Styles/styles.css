@@ -1,0 +1,143 @@
+/* Estado inicial: oculto al cargar */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Cuando la página ya está lista, le agregamos esta clase */
+body.fade-in {
+  opacity: 1;
+}
+
+/* Al salir, se desvanece */
+body.fade-out {
+  opacity: 0;
+}
+
+/* Estilo general del body (el fondo y estructura principal) */
+body {
+  margin: 0; /* Quito los márgenes por defecto del navegador */
+  height: 100vh; /* Hago que el body ocupe el 100% de la altura de la ventana */
+  display: flex; /* Activo flexbox para poder centrar cosas fácilmente */
+  justify-content: center; /* Centro los elementos horizontalmente */
+  align-items: center; /* Centro los elementos verticalmente */
+  background-color: #f2f2f2; /* Le doy un color de fondo claro a toda la pantalla */
+  font-family: Arial, sans-serif; /* Uso una fuente limpia y sin serifas */
+}
+
+/* Estilo del cuadro contenedor donde están los botones */
+.cuadro {
+  background-color: #fff; /* Fondo blanco para que destaque */
+  padding: 40px; /* Agrego espacio interno para que no quede todo pegado a los bordes */
+  border-radius: 10px; /* Le doy bordes redondeados */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Le agrego una sombra suave para que tenga relieve */
+  text-align: center; /* Centro el contenido de texto (como el título) */
+}
+
+/* Estilo para el título dentro del cuadro */
+.cuadro h2 {
+  margin-bottom: 20px; /* Dejo un espacio entre el título y los botones */
+}
+
+/* Estilo de los botones */
+.cuadro button {
+  display: block; /* Hago que los botones se comporten como bloques (uno abajo del otro) */
+  width: 100%; /* Hago que ocupen todo el ancho del contenedor */
+  margin: 10px 0; /* Dejo espacio arriba y abajo entre los botones */
+  padding: 10px 20px; /* Les doy espacio interno para que se vean más grandes */
+  background-color: #669a35ae; /* Color azul para el fondo del botón */
+  color: white; /* Color blanco para el texto del botón */
+  border: none; /* Quito el borde por defecto del botón */
+  border-radius: 5px; /* Redondeo las esquinas del botón */
+  cursor: pointer; /* Cambio el cursor a una manito cuando paso por encima */
+  transition: background-color 0.3s; /* Suavizo la transición cuando cambia de color */
+  font-size: 16px; /* Ajusto el tamaño del texto dentro del botón */
+}
+
+/* Estilo cuando paso el mouse por encima del botón */
+
+.cuadro button:hover {
+  background-color: #e7ec8f; /*cambio el fondo del boton */
+  color: #566227; /*cambio el color del texto */
+}
+/* Teléfonos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .cuadro {
+    padding: 30px 20px;
+  }
+
+  .cuadro h2 {
+    font-size: 18px;
+  }
+
+  .cuadro button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .cuadro button i {
+    font-size: 14px;
+  }
+}
+
+/* Tablets y pantallas medianas (entre 481px y 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cuadro {
+    padding: 40px 30px;
+  }
+
+  .cuadro h2 {
+    font-size: 20px;
+  }
+
+  .cuadro button {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+
+  .cuadro button i {
+    font-size: 16px;
+  }
+}
+
+/* Laptops y pantallas grandes (entre 769px y 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .cuadro {
+    padding: 50px 40px;
+    max-width: 500px;
+  }
+
+  .cuadro h2 {
+    font-size: 24px;
+  }
+
+  .cuadro button {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+
+  .cuadro button i {
+    font-size: 18px;
+  }
+}
+
+/* Pantallas extra grandes (más de 1200px, como TVs o monitores grandes) */
+@media (min-width: 1201px) {
+  .cuadro {
+    padding: 60px 50px;
+    max-width: 600px;
+  }
+
+  .cuadro h2 {
+    font-size: 28px;
+  }
+
+  .cuadro button {
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+
+  .cuadro button i {
+    font-size: 20px;
+  }
+}

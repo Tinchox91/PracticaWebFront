@@ -1,0 +1,154 @@
+/* Estado inicial: oculto al cargar */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Cuando la página ya está lista, le agregamos esta clase */
+body.fade-in {
+  opacity: 1;
+}
+
+/* Al salir, se desvanece */
+body.fade-out {
+  opacity: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* Centro horizontalmente */
+  align-items: center; /* Centro verticalmente */
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  padding: 20px; /* Por si estás en pantalla chica */
+}
+
+/* Contenedor del cuadro */
+.cuadro {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Limito el ancho en pantallas grandes */
+}
+
+/* Título */
+.cuadro h2 {
+  margin-bottom: 20px;
+}
+
+/* Botones con íconos y animaciones */
+.cuadro button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s; /* Animaciones suaves */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre ícono y texto */
+}
+
+.cuadro button:hover {
+  background-color: #0056b3;
+  transform: scale(1.03); /* Efecto de zoom suave al pasar el mouse */
+}
+
+/* Íconos */
+.cuadro button i {
+  font-size: 18px;
+}
+
+/* Teléfonos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .cuadro {
+    padding: 30px 20px;
+  }
+
+  .cuadro h2 {
+    font-size: 18px;
+  }
+
+  .cuadro button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .cuadro button i {
+    font-size: 14px;
+  }
+}
+
+/* Tablets y pantallas medianas (entre 481px y 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cuadro {
+    padding: 40px 30px;
+  }
+
+  .cuadro h2 {
+    font-size: 20px;
+  }
+
+  .cuadro button {
+    font-size: 15px;
+    padding: 12px 18px;
+  }
+
+  .cuadro button i {
+    font-size: 16px;
+  }
+}
+
+/* Laptops y pantallas grandes (entre 769px y 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .cuadro {
+    padding: 50px 40px;
+    max-width: 500px;
+  }
+
+  .cuadro h2 {
+    font-size: 24px;
+  }
+
+  .cuadro button {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+
+  .cuadro button i {
+    font-size: 18px;
+  }
+}
+
+/* Pantallas extra grandes (más de 1200px, como TVs o monitores grandes) */
+@media (min-width: 1201px) {
+  .cuadro {
+    padding: 60px 50px;
+    max-width: 600px;
+  }
+
+  .cuadro h2 {
+    font-size: 28px;
+  }
+
+  .cuadro button {
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+
+  .cuadro button i {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,33 @@
+.titulo {
+  color: rgb(61, 61, 97);
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+.caja {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.resaltado {
+  color: red;
+  font-weight: bold;
+}
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.fade-alert {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-alert.show {
+  opacity: 1;
+}
