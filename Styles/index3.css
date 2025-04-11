@@ -1,3 +1,6 @@
+.salida {
+  text-decoration: none;
+}
 .titulo {
   color: rgb(61, 61, 97);
   font-size: 2em;
@@ -30,4 +33,93 @@ body {
 
 .fade-alert.show {
   opacity: 1;
+}
+.separador {
+  height: 20px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #666;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}
+.alerta {
+  background-color: #255120;
+  color: #77c56d;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #4ccd99;
+
+  transition: opacity 0.5s ease; /* Transición suave */
+}
+
+.alerta:hover {
+  background-color: #4ccd99;
+  color: #fff;
+  cursor: pointer;
+}
+
+.alerta:active {
+  background-color: #77c56d;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(0.98); /* Efecto de pulsación */
+}
+
+#miAlerta :active {
+  background-color: #77c56d;
+  color: #ffffff;
+  cursor: pointer;
+  transform: scale(0.98); /* Efecto de pulsación */
+}
+
+.salida {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #333;
+}
+
+.salida:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transform: scale(1.01); /* Efecto de aumento */
+}
+.salida:active {
+  background-color: #d0d0d0;
+  cursor: pointer;
+  transform: scale(0.98); /* Efecto de pulsación */
+}
+
+.cabecera {
+  background-color: #98d69a; /* Verde oscuro */
+  color: white;
+  padding: 10px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+/* Estado inicial: oculto al cargar */
+body {
+  transition: opacity 0.5s ease;
+}
+
+/* Cuando la página ya está lista, le agregamos esta clase */
+body.fade-in {
+  opacity: 1;
+}
+
+/* Al salir, se desvanece */
+body.fade-out {
+  opacity: 0;
 }

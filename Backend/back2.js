@@ -21,7 +21,7 @@ function mostrarMensaje() {
   toastr.options = {
     closeButton: true,
     progressBar: true,
-    positionClass: "toast-bottom-right",
+    positionClass: "toast-top-right",
     timeOut: "2000",
   };
   toastr.success("¡Este es un mensaje con Toastr!");

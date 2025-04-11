@@ -55,11 +55,25 @@ body {
 }
 
 /* Estilo cuando paso el mouse por encima del botón */
+body {
+  background-image: url("../Images/fondoPrincipal.jpg");
+  background-size: cover; /* Escala para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Fondo fijo al hacer scroll (opcional) */
+}
 
 .cuadro button:hover {
   background-color: #e7ec8f; /*cambio el fondo del boton */
   color: #566227; /*cambio el color del texto */
+  transform: scale(1.1); /* Aumento el tamaño del botón al pasar el mouse */
+  transition: transform 1, 05 s ease-in-out; /* Suavizo la transición al escalar */
 }
+.cuadro button:active {
+  transform: scale(0.9); /* Al hacer clic, reduzco el tamaño del botón */
+  transition: transform 0.1s ease-in-out; /* Suavizo la transición al escalar */
+}
+/* Estilo para el icono dentro del botón */
 /* Teléfonos pequeños (hasta 480px) */
 @media (max-width: 480px) {
   .cuadro {
