@@ -1,0 +1,76 @@
+header {
+  background-color: #333; /* Dark background for the header */
+  color: white; /* White text color */
+  padding: 10px; /* Padding around the header */
+  text-align: center; /* Centered text */
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  position: fixed; /* Fixed position to stay at the top */
+  z-index: 1000; /* Asegura que esté encima de todo */
+}
+body {
+  margin: 0;
+  margin-top: 80px; /* Espacio para el header fijo */
+  font-family: "Atma", system-ui;
+  text-align: center;
+}
+.principal {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  padding-top: 80px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4); /*sombra*/
+  border-radius: 8px;
+  margin: auto;
+  width: 80%;
+}
+
+.atma-light {
+  font-family: "Atma", system-ui;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.atma-regular {
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atma-medium {
+  font-family: "Atma", system-ui;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.atma-semibold {
+  font-family: "Atma", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.atma-bold {
+  font-family: "Atma", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+.boton1 {
+  border-radius: 8px;
+  color: rgb(32, 58, 58);
+  border: 0.5px solid rgb(212, 220, 220);
+  background-color: rgb(255, 255, 255);
+}
+.boton1:hover {
+  background-color: rgb(66, 70, 70);
+  color: rgb(245, 247, 247);
+}
+.boton1:active {
+  cursor: pointer;
+  transform: scale(0.98); /* Efecto de pulsación */
+}
+p {
+  font-family: "system-ui", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 10px; /* Espaciado interno */
+}
