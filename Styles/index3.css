@@ -1,3 +1,4 @@
+
 .salida {
   text-decoration: none;
 }
@@ -108,10 +109,20 @@ body {
   font-family: "Arial", sans-serif;
   font-weight: bold;
   border-radius: 5px;
+  width: 100%;  
+  top: 0; /* Asegura que esté en la parte superior */
+  left: 0; /* Asegura que esté alineado a la izquierda */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  position: fixed; /* Fixed position to stay at the top */
+  z-index: 1000; /* Asegura que esté encima de todo */
 }
 /* Estado inicial: oculto al cargar */
 body {
   transition: opacity 0.5s ease;
+  margin: 0;
+  margin-top: 20px; 
+  padding: 20px;
+  position: relative;
 }
 
 /* Cuando la página ya está lista, le agregamos esta clase */
@@ -122,4 +133,15 @@ body.fade-in {
 /* Al salir, se desvanece */
 body.fade-out {
   opacity: 0;
+}
+.principal {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  padding-top: 80px;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.4); /*sombra*/
+  border-radius: 8px;
+  margin: auto;
+  width: 80%;
+ 
 }
